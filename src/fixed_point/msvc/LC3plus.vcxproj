@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60DFA535-B4DF-43B0-AB2A-275BF51B6491}</ProjectGuid>
+    <RootNamespace>LC3</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+    <TargetName>LC3plus</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>LC3plus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>LC3plus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>LC3plus</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\basic_op;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>X_DEBUG;WIN32;   X_NO_POST_REL_CHANGES;ETSI_RELEASE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LC3plus.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\basic_op;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>X_DEBUG;WIN32;   X_NO_POST_REL_CHANGES;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LC3plus.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\basic_op;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;ETSI_RELEASE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LC3plus.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\basic_op; ..\basop_phecu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;X_NO_POST_REL_CHANGES;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)LC3plus.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\basic_op\basop32.h" />
+    <ClInclude Include="..\basic_op\control.h" />
+    <ClInclude Include="..\basic_op\count.h" />
+    <ClInclude Include="..\basic_op\enh1632.h" />
+    <ClInclude Include="..\basic_op\enh40.h" />
+    <ClInclude Include="..\basic_op\enhUL32.h" />
+    <ClInclude Include="..\basic_op\move.h" />
+    <ClInclude Include="..\basic_op\stl.h" />
+    <ClInclude Include="..\basic_op\typedef.h" />
+    <ClInclude Include="..\basic_op\typedefs.h" />
+    <ClInclude Include="..\basop_mpy.h" />
+    <ClInclude Include="..\basop_util.h" />
+    <ClInclude Include="..\constants.h" />
+    <ClInclude Include="..\defines.h" />
+    <ClInclude Include="..\dynmem.h" />
+    <ClInclude Include="..\functions.h" />
+    <ClInclude Include="..\lc3.h" />
+    <ClInclude Include="..\rom_basop_util.h" />
+    <ClInclude Include="..\setup_dec_lc3.h" />
+    <ClInclude Include="..\setup_enc_lc3.h" />
+    <ClInclude Include="..\tinywavein_c.h" />
+    <ClInclude Include="..\tinywaveout_c.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\adjust_global_gain_fx.c" />
+    <ClCompile Include="..\al_fec.c" />
+    <ClCompile Include="..\apply_global_gain_fx.c" />
+    <ClCompile Include="..\ari_codec.c" />
+    <ClCompile Include="..\attack_detector_fx.c" />
+    <ClCompile Include="..\basic_op\basop32.c" />
+    <ClCompile Include="..\basic_op\control.c" />
+    <ClCompile Include="..\basic_op\count.c" />
+    <ClCompile Include="..\basic_op\dynmem.c" />
+    <ClCompile Include="..\basic_op\enh1632.c" />
+    <ClCompile Include="..\basic_op\enh40.c" />
+    <ClCompile Include="..\basic_op\enhUL32.c" />
+    <ClCompile Include="..\basop_mpy.c" />
+    <ClCompile Include="..\basop_util.c" />
+    <ClCompile Include="..\codec_exe.c" />
+    <ClCompile Include="..\constants.c" />
+    <ClCompile Include="..\cutoff_bandwidth.c" />
+    <ClCompile Include="..\dct2_fx.c" />
+    <ClCompile Include="..\dct4_fx.c" />
+    <ClCompile Include="..\dec_entropy.c" />
+    <ClCompile Include="..\dec_lc3.c" />
+    <ClCompile Include="..\detect_cutoff_warped_fx.c" />
+    <ClCompile Include="..\enc_entropy.c" />
+    <ClCompile Include="..\enc_lc3.c" />
+    <ClCompile Include="..\estimate_global_gain_fx.c" />
+    <ClCompile Include="..\fft.c" />
+    <ClCompile Include="..\imdct_fx.c" />
+    <ClCompile Include="..\lc3.c" />
+    <ClCompile Include="..\levinson_fx.c" />
+    <ClCompile Include="..\ltpf_coder_fx.c" />
+    <ClCompile Include="..\ltpf_decoder_fx.c" />
+    <ClCompile Include="..\mdct_fx.c" />
+    <ClCompile Include="..\mdct_shaping_fx.c" />
+    <ClCompile Include="..\noise_factor_fx.c" />
+    <ClCompile Include="..\noise_filling_fx.c" />
+    <ClCompile Include="..\olpa_fx.c" />
+    <ClCompile Include="..\pc_apply_fx.c" />
+    <ClCompile Include="..\pc_classify_fx.c" />
+    <ClCompile Include="..\pc_main_fx.c" />
+    <ClCompile Include="..\pc_update_fx.c" />
+    <ClCompile Include="..\per_band_energy_fx.c" />
+    <ClCompile Include="..\plc_apply_fx.c" />
+    <ClCompile Include="..\plc_classify_fx.c" />
+    <ClCompile Include="..\plc_damping_scrambling_fx.c" />
+    <ClCompile Include="..\plc_lpc_scaling_fx.c" />
+    <ClCompile Include="..\plc_main_fx.c" />
+    <ClCompile Include="..\plc_noise_substitution_fx.c" />
+    <ClCompile Include="..\plc_phecu_f0_refine_first_fx.c" />
+    <ClCompile Include="..\plc_phecu_fec_hq_fx.c" />
+    <ClCompile Include="..\plc_phecu_lf_peak_analysis_fx.c" />
+    <ClCompile Include="..\plc_phecu_peak_locator_fx.c" />
+    <ClCompile Include="..\plc_phecu_setf0hz_fx.c" />
+    <ClCompile Include="..\plc_phecu_tools_fx.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\plc_tdac_fx.c" />
+    <ClCompile Include="..\plc_tdc_inverse_odft_fx.c" />
+    <ClCompile Include="..\plc_tdc_lagwin_fx.c" />
+    <ClCompile Include="..\plc_tdc_main_fx.c" />
+    <ClCompile Include="..\plc_tdc_pre_emphasis_fx.c" />
+    <ClCompile Include="..\plc_update_aft_imdct_fx.c" />
+    <ClCompile Include="..\plc_update_fx.c" />
+    <ClCompile Include="..\plc_xcorr_fx.c" />
+    <ClCompile Include="..\pvq_dec_fx.c" />
+    <ClCompile Include="..\pvq_enc_fx.c" />
+    <ClCompile Include="..\pvq_index_fx.c" />
+    <ClCompile Include="..\quantize_spec_fx.c" />
+    <ClCompile Include="..\reorder_bitstream_fx.c" />
+    <ClCompile Include="..\resamp12k8_fx.c" />
+    <ClCompile Include="..\residual_coding_fx.c" />
+    <ClCompile Include="..\residual_decoding_fx.c" />
+    <ClCompile Include="..\rom_basop_util.c" />
+    <ClCompile Include="..\scale_signal24_fx.c" />
+    <ClCompile Include="..\setup_dec_lc3.c" />
+    <ClCompile Include="..\setup_enc_lc3.c" />
+    <ClCompile Include="..\sns_compute_scf_fx.c" />
+    <ClCompile Include="..\sns_interpolate_scf_fx.c" />
+    <ClCompile Include="..\sns_quantize_scf_fx.c" />
+    <ClCompile Include="..\tns_coder_fx.c" />
+    <ClCompile Include="..\tns_decoder_fx.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

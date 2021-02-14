@@ -1,0 +1,51 @@
+
+	     Read-me for ITU-T/UGST Basic Operator Module
+			    (12.November.2004)
+
+    =============================================================
+    COPYRIGHT NOTE: This source code, and all of its derivations,
+    is subject to the "ITU-T General Public License". Please have
+    it  read  in    the  distribution  disk,   or  in  the  ITU-T
+    Recommendation G.191 on "SOFTWARE TOOLS FOR SPEECH AND  AUDIO
+    CODING STANDARDS".
+    =============================================================
+
+
+The ITU-T/UGST Basic Operator module contails the following files:
+
+
+General:
+~~~~~~~~
+ basop.rme: ....... Read-me file for Basic Operator module (this file)
+
+
+C code: ('model' directory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ basop32.c: ....... 16/32 bit basic operators
+ basop32.h: ....... Prototypes for basop32.c
+ count.c: ......... Functions for WMOPS computation
+ count.h: ......... Prototypes for count.c
+ typedef.h: ....... Data type definitions
+ typedefs.h: ...... New data type definitions
+ move.h: .......... Move & miscellaneous legacy operators
+ control.c: ....... Control operator internal variable decl.
+ control.h: ....... Control operators
+ enh1632.c: ....... Enhanced 16/32 bit basic operators
+ enh1632.h: ....... Prototypes for enh1632.c
+ enh40.c: ......... 40 bit basic operators
+ enh40.h: ......... Prototypes for enh40.c
+ patch.h: ......... Backward compatibility for operator names
+ stl.h: ........... Main header file
+
+Demos:
+~~~~~~
+Demo programs are not available for this module.
+
+
+Makefiles
+~~~~~~~~~
+Make files are not available for this module.
+
+
+-- <k-djafarian@ti.com>
+
